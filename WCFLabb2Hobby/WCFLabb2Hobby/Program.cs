@@ -18,20 +18,21 @@ namespace WCFLabb2Hobby
             {
                 try
                 {
-                    selfServiceHost.AddServiceEndpoint(
-                        typeof (ITeam),
-                        new WSHttpBinding(),
-                        "TeamClass");
+                    selfServiceHost.AddServiceEndpoint
+                     (typeof(ITeam),
+                     new WSHttpBinding(),
+                     "TeamClass");
 
                     ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
-                    smb.HttpsGetEnabled = true;
+                    smb.HttpGetEnabled = true;
 
                     selfServiceHost.Description.Behaviors.Add(smb);
 
                     selfServiceHost.Open();
-                    Console.WriteLine("Do you want to see a list of drivers?");
+                    Console.WriteLine("Let´s see a list of teams in F1");
                     Console.WriteLine("Press ENTER to exit");
-                    Console.ReadKey();
+                    Console.ReadLine();
+
                 }
                 catch (CommunicationException ex)
                 {

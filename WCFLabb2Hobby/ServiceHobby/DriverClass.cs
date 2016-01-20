@@ -18,7 +18,7 @@ namespace ServiceHobby
 
         public List<string> GetTeamNames()
         {
-            return new List<string>() {@"Mercedes", "Ferrari", "Williams", "Red Bull Racing", "Force India", "Lotus", "Torro Rosso", "Sauber", "McLaren", "Manor", "Haas"};
+            return new List<string>() {"Mercedes", "Ferrari", "Williams", "Red Bull Racing", "Force India", "Lotus", "Torro Rosso", "Sauber", "McLaren", "Manor", "Haas"};
         }
     }
 }
