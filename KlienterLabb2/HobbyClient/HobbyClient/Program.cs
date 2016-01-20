@@ -21,8 +21,7 @@ namespace HobbyClient
                 {
                     Console.WriteLine(team);
                 }
-                //Console.WriteLine(tc.GetTeamNames());
-            
+          
             Thread.Sleep(4000);
             Console.ReadKey();
         }
