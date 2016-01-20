@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Description;
-using System.Text;
-using System.Threading.Tasks;
+using ServiceLabb2;
 
 namespace WCFLabb2
 {
@@ -12,15 +9,15 @@ namespace WCFLabb2
     {
         static void Main(string[] args)
         {
-            Uri baseAddress = new Uri("http://localhost:8080/WCF_Service_Days");
-            using (ServiceHost selfServiceHost = new ServiceHost(typeof(DaysService), baseAddress))
+            Uri baseAddress = new Uri("http://localhost:8080/ServiceLabb2");
+            using (ServiceHost selfServiceHost = new ServiceHost(typeof(CountingService), baseAddress))
             {
                 try
                 {
                     selfServiceHost.AddServiceEndpoint
-                     (typeof(IDays),
+                     (typeof(ICounting),
                      new WSHttpBinding(),
-                     "DaysService");
+                     "CountingService");
 
                     ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
                     smb.HttpGetEnabled = true;
@@ -28,8 +25,8 @@ namespace WCFLabb2
                     selfServiceHost.Description.Behaviors.Add(smb);
 
                     selfServiceHost.Open();
-                    Console.WriteLine("The gates are open!");
-                    Console.WriteLine("Tryck på ENTER för att stänga tjänsten");
+                    Console.WriteLine("Let´s calculate your BMI");
+                    Console.WriteLine("Press ENTER to exit");
                     Console.ReadLine();
 
                 }
