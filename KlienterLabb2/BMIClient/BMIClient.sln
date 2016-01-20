@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMIClient", "BMIClient\BMIClient.csproj", "{1119D913-E53A-43B5-8BF1-E6E9F6C9A389}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcingBMI", "CalcingBMI\CalcingBMI.csproj", "{A5393DB7-A7C8-45CC-86C3-D9AE915C90D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1119D913-E53A-43B5-8BF1-E6E9F6C9A389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1119D913-E53A-43B5-8BF1-E6E9F6C9A389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1119D913-E53A-43B5-8BF1-E6E9F6C9A389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5393DB7-A7C8-45CC-86C3-D9AE915C90D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5393DB7-A7C8-45CC-86C3-D9AE915C90D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5393DB7-A7C8-45CC-86C3-D9AE915C90D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5393DB7-A7C8-45CC-86C3-D9AE915C90D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
