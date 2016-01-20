@@ -68,7 +68,6 @@
             this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Input Birthday";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
