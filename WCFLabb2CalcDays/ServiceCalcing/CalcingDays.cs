@@ -7,14 +7,15 @@ namespace ServiceCalcing
     public interface ICalcDaysOld
     {
         [OperationContract]
-        int daysOld(DateTime bornDate, DateTime today);
+        int daysOld(DateTime bornDate);
     }
     public class CalcingDays : ICalcDaysOld
     {
-        public int daysOld(DateTime bornDate, DateTime today)
+        public int daysOld(DateTime bornDate)
         {
             Console.WriteLine("Recieved");
-            return today.Day - bornDate.Day;
+            var today = DateTime.Now;
+            return (int)(today.Date - bornDate.Date).TotalDays;
         }
     }
 }
